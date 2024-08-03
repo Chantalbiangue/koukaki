@@ -3,6 +3,7 @@ add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 function theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css' );
+    wp_enqueue_style( 'child-style-scss', get_stylesheet_directory_uri() . '/style.scss' );
     wp_enqueue_style( 'swiper-style','https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
     wp_enqueue_script( 'swiper-script','https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js',array(),'1.0.0',true);
     wp_enqueue_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'); 
